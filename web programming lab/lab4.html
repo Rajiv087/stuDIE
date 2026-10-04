@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-4</title>
+</head>
+<body>
+    <h1>JS Methods</h1>
+    <h2>1. Inner Html</h2>
+    <p id="paragraph">
+        Inner html
+    </p>
+
+    <h2>2. Form Validation</h2>
+    <form action="" id="form">
+        <input type="text" id="username" placeholder="Enter your username" />
+        <button type="submit">submit</button>
+    </form>
+
+    <h2>3. Bulb on/off</h2>
+    <div id="bulb">
+        <img id="bulbimg" src="bulb-off.png" alt="bulb">
+    </div>
+    <button id = "on"> ON</button>
+    <button id = "off"> OFF</button>
+
+</body>
+
+<script>
+    document.getElementById("paragraph").innerHTML = "Hello World"
+    document.getElementById("paragraph").style.color="red"
+    function bulb_on() {
+        document.getElementById("bulbimg").src="bulb-on.png";
+    } 
+    function bulb_off() {
+        document.getElementById("bulbimg").src="bulb-off.png";
+    } 
+    document.getElementById("on").onclick = bulb_on;
+    document.getElementById("off").onclick = bulb_off;
+
+</script>
+</html>

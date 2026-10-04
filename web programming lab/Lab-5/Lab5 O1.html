@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Position Tracker</title>
+    <style>
+        #coordinates {
+                border: 2px solid #333;
+                border-radius: 8px;
+                display: inline-block;    
+                padding: 15px;
+            }
+    </style>
+
+</head>
+<body>
+    <h1>Track mouse position</h1>
+    <div id="coordinates">X: 0, Y: 0</div>
+
+    <script>
+        const coordinatesDisplay = document.getElementById("coordinates");
+        document.addEventListener("mousemove", function(event) {
+            const x = event.clientX;
+            const y = event.clientY;
+            coordinatesDisplay.textContent = "X: " + x + ", Y: " + y;
+        });
+    </script>
+
+</body>
+</html>

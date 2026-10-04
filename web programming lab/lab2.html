@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-2(03-08-2026)</title>
+    <style>
+        .heading {
+            color: green;
+            background-color: lightyellow;
+        }
+
+        #special {
+            color: red;
+            font-size: 20px;
+        }
+
+        .priority {
+            color: darkmagenta;
+        }
+
+        #highest {
+            color: red;
+        }
+        * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        width: 300px;
+    }
+
+        .static {
+            position: static;
+            background-color: lightblue;
+            padding: 30px;
+
+        }
+
+        .relative {
+            position: relative;
+            left: 30px;
+            background-color: lightgreen;
+            padding: 30px;
+
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 400px;
+            left: 200px;
+            background-color: pink;
+            padding: 30px;
+
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: orange;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">LAB-2</h1>
+    <h2>CSS Styling Selectors</h2>
+    <p class="priority">
+        Element Selector.
+    </p>
+
+    <p class="heading">
+        Class Selector
+    </p>
+
+    <p id="special">
+        ID Selector
+    </p>
+
+    <h2>CSS Precedence</h2>
+    <h2 class="priority" id="highest">
+        CSS priority
+    </h2>
+
+    <p>
+        Priority- ID Selector, Class Selector, Element Selector
+    </p>
+
+    <h2>CSS Positioning</h2>
+
+    <div class="static">
+        Static Positioning
+    </div>
+    <br>
+
+    <div class="relative">
+        Relative Positioning
+    </div>
+
+    <div class="absolute-box">
+        Absolute Positioning
+    </div>
+
+    <div class="fixed">
+        Fixed Positioning
+    </div>
+</body>
+
+</html>

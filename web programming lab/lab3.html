@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-3</title>
+    <style>
+        .inheritance{
+            color: bisque;
+            background-color: chocolate;
+        }    
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            border: 2px solid black;
+            gap: 20px;
+            background-color: #0573b3;
+        }
+        .flex-item{
+            background-color: aqua;
+            color: brown;
+            border: solid black 2px;
+            padding: 35px;
+        }
+        
+        .grid-container{
+            display: grid;
+            background-color:cadetblue;
+            padding: 35px;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+            justify-content: center;
+
+        }
+        
+        .grid-item{
+            background-color:tomato;
+            color: white;
+            border: solid black 2px;
+            padding: 20px;
+
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Inheritance</h2>
+    <div class="inheritance">
+        <p>
+           This paragraph inherits styling from div
+        </p>
+    </div>
+    <div>
+        <ol>
+            <li>1</li>
+            <li>2 
+                
+            </li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+    </div>
+
+
+
+    <h2>Flexbox</h2>
+    <div class="flex-container">
+        <div class="flex-item"> First flex item</div>
+        <div class="flex-item"> Second flex item</div>
+        <div class="flex-item"> Third flex item</div>
+
+    </div>
+
+    <h2>Grid </h2>
+    <div class="grid-container">
+        <div class="grid-item">First grid item</div>
+        <div class="grid-item">Second grid item</div>
+        <div class="grid-item">Third grid item</div>
+        <div class="grid-item">Fourth grid item</div>
+        <div class="grid-item">Fifth grid item</div>
+    </div>
+</body>
+</html>

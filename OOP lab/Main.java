@@ -1,0 +1,127 @@
+class Employee {
+    String name;
+    int id;
+    double sal;
+    String Department;
+
+    Employee(String name, int id, double sal, String Department) {
+        this.name = name;
+        this.id = id;
+        this.sal = sal;
+        this.Department = Department;
+    }
+
+    public void get_id() {
+        System.out.println("Employee ID: " + id);
+    }
+
+    public void get_name() {
+        System.out.println("Employee Name: " + name);
+    }
+
+    public void set_id(int id) {
+        this.id = id;
+    }
+    
+    public void set_name(String name) {
+        this.name = name;
+    }
+
+    public void calsal() {
+        System.out.println("Employee Salary: " + sal);
+    }
+
+}
+
+class Teaching extends Employee {
+    String Course_assigned;
+    int No_of_courses;
+
+    Teaching(String name, int id, double sal, String Department, String Course_assigned, int No_of_courses) {
+        super(name, id, sal, Department);
+        this.Course_assigned = Course_assigned;
+        this.No_of_courses = No_of_courses;
+    }
+
+    public void get_course() {
+        System.out.println("Course: " + Course_assigned);
+    }
+
+    public void set_course(String Course_assigned) {
+        this.Course_assigned = Course_assigned;
+    }
+
+    public void calsal() { 
+        System.out.println("Teacher Salary: " + (sal + No_of_courses*2000));
+    }
+}
+
+class Admin extends Employee {
+    String section;
+    String Designation;
+
+    Admin(String name, int id, double sal, String Department, String section, String Designation) {
+        super(name, id, sal, Department);
+        this.section = section;
+        this.Designation = Designation;
+    }
+
+    public void get_sec() {
+        System.out.println("Section: " + section);
+    }
+
+    public void set_sec(String section) {
+        this.section = section;
+    }
+
+    public void calsal() {
+        System.out.println("Admin Salary: " + (sal + 10000));
+    }
+}
+
+class Manager extends Employee {
+    int Mgid;
+    int tenure;
+    String term_name;
+
+    Manager(String name, int id, double sal, String Department, int Mgid, int tenure, String term_name) {
+        super(name, id, sal, Department);
+        this.Mgid = Mgid;
+        this.tenure = tenure;
+        this.term_name = term_name;
+    }
+
+    public void get_Mgid() {
+        super.get_id();
+        System.out.println("Manager ID: " + Mgid);
+    }
+
+    public void calsal() {
+        System.out.println("Salary: " + (sal + 20000));
+    }
+}
+
+public class Main {
+    public static void main(String args[]) {
+        Employee E1 = new Employee("Rajiv", 101, 10000, "Sales");
+        E1.get_name();
+        E1.get_id();
+        E1.calsal();
+        System.out.println("\n");
+        
+        Teaching T1 = new Teaching("Rohit", 202, 20000, "CSE", "OOP", 3);
+        T1.get_course();
+        T1.calsal();
+        System.out.println("\n");
+        
+        Admin A1 = new Admin("Harry", 420, 30000, "Finance", "Salary", "Senior Admin");
+        A1.get_sec();
+        A1.calsal();
+        System.out.println("\n");
+        
+        Manager M1 = new Manager("Faizan", 567, 40000, "Administration", 4224, 5, "Manager");
+        M1.get_Mgid();
+        M1.calsal();
+        System.out.println("\n");
+    }
+}  

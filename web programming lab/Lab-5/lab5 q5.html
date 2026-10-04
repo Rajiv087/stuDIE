@@ -1,0 +1,40 @@
+<html> 
+    <head>
+        <title>JavaScript Math, Number & String Examples</title>
+    </head>
+    <body>
+        <h2>JavaScript Math, Number, and String Programs</h2>
+        <pre id="output"></pre>
+    <script>
+        let output = "";
+        let sqrtVal = Math.sqrt(144);
+        output += "Square root of 144: " + sqrtVal + "\n";
+
+        let radius = 7;
+        let area = Math.PI * radius * radius;
+        output += "Area of circle with radius 7: " + area.toFixed(2) + "\n\n";
+        
+        let strNum = "123.45";
+        let convertedNum = Number(strNum);
+        output += "Converted number + 10: " + (convertedNum + 10) + "\n";
+        
+        let value = "Hello" / 2; 
+        output += "Is value NaN? " + isNaN(value) + "\n\n";
+        
+        let str = "Programming";
+        let reversed = str.split("").reverse().join("");
+        output += "Reversed string (Programming): " + reversed + "\n";
+
+        let text = "JavaScript";
+        let vowels = text.match(/[aeiou]/gi).length;
+        output += "Vowel count in 'JavaScript': " + vowels + "\n";
+        
+        let lowerStr = "hello world";
+        let upperStr = "JAVASCRIPT";
+        output += "Uppercase: " + lowerStr.toUpperCase() + "\n";
+        output += "Lowercase: " + upperStr.toLowerCase() + "\n";
+
+        document.getElementById("output").textContent = output;
+    </script>
+</body>
+</html>

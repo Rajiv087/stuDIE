@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script>
+class Student {
+   constructor(name, marks) {
+   this.name = name;
+   this.marks = marks; 
+ }
+
+ averageMarks() {
+   let sum = this.marks.reduce((acc, val) => acc + val, 0);
+   return sum / this.marks.length;    
+}
+
+ grade() {
+    let avg = this.averageMarks();
+      if (avg >= 90) {
+    return "A";
+    } else if (avg >= 75) {
+    return "B";
+    } else if (avg >= 50) {
+    return "C";
+    } else {
+    return "F";
+ }
+}
+}
+
+const student1 = new Student("Saniya ", [85, 90, 88, 92]);
+document.write("Name:", student1.name);
+document.write("Average Marks:", student1.averageMarks());
+document.write(" Grade:", student1.grade());
+</script>
+<body>
+</body>
+</html>

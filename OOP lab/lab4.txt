@@ -1,0 +1,6 @@
+1. create a class employee with properties like id, name, designation, salary, department, course assigned. as per the user's preference create employees of different types by calling different constructors, 
+use constructor chaining whereever possible 
+for calculation of salary, create different overloaded forms of same method for different employees 
+
+2. create multiple classes in the same file with multiple main methods and manually execute classes of your choice. use static properties of one class in another class 
+

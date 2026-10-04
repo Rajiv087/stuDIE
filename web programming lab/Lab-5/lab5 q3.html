@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script>
+class Person {
+ constructor(name, birthYear) {
+ this.name = name;
+ this.birthYear = birthYear;
+ }
+ age() {
+    let currentYear = new Date().getFullYear(); 
+    return currentYear - this.birthYear;
+    }
+}
+
+let person1 = new Person("abc", 2000);
+document.write("Name:", person1.name);
+document. write(" Age:", person1.age());
+</script>
+<body>
+</body>
+</html>

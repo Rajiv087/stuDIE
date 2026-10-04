@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- <style>
+        h1{
+            color:pink;
+            background-color: red;
+        }
+    </style> -->
+    <style>
+        /* element selector */
+        /* div{
+            background-color: red;
+        } */
+         /*Class selector */
+        .red{
+            background-color: red;
+        }
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selectors */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+        /* desendant selector  */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+        /* universal selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector  */
+        a:visited { 
+            color: yellow;
+        }
+        a:link {
+            color: green;
+        }
+        div:hover{
+            background-color: #414414;
+        }
+        p:first-child {
+            color: aqua;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Three ways to add CSS to html file</h1>
+
+
+    <div >
+        <ol>
+            <li id="green">Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ol>
+    </div>
+
+    <div class="red">
+        i am a div
+        <article> 
+        <p>i am a para inside div</p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.youtube.com">Go to Youtube</a>
+
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+</html>
