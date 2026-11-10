@@ -1,4 +1,3 @@
-package Lab4;
 class Employee {
     String name;
     int id;

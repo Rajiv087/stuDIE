@@ -1,0 +1,11 @@
+// 6 oct 2026
+1. Write a program in java to check whether a string entered by a user is palidrome or not ?
+2. Write a progarm to display teh frequency of each element in a given string ?
+3. write a program to find the first character in a string that occurs only one 
+
+4. write a program to remove duplicate characters from a string by reserving the orders of their first string 
+
+5. write a program to check whether two strings are annagrams or not ? 
+6. write a program to reverse every word of a string 
+7. write a program to find the longest word in a string
+make seperate classes for each and do not make a main function, just the classes that do all the work and return the full code at once, not in parts 

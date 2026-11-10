@@ -1,10 +1,10 @@
-class Employee {
+class Emp {
     String name;
     int id;
     double sal;
     String Department;
 
-    Employee(String name, int id, double sal, String Department) {
+    Emp(String name, int id, double sal, String Department) {
         this.name = name;
         this.id = id;
         this.sal = sal;
@@ -33,7 +33,7 @@ class Employee {
 
 }
 
-class Teaching extends Employee {
+class Teaching extends Emp {
     String Course_assigned;
     int No_of_courses;
 
@@ -58,7 +58,7 @@ class Teaching extends Employee {
 
 }
 
-class Admin extends Employee {
+class Admin extends Emp {
     String section;
     String Designation;
 
@@ -81,7 +81,7 @@ class Admin extends Employee {
     }
 }
 
-class Manager extends Employee {
+class Manager extends Emp {
     int Mgid;
     int tenure;
     String term_name;
@@ -104,9 +104,9 @@ class Manager extends Employee {
 
 }
 
-public class Main {
+public class Employee {
     public static void main(String args[]) {
-        Employee E1 = new Employee("Rajiv", 101, 10000, "Sales");
+        Emp E1 = new Emp("Rajiv", 101, 10000, "Sales");
         E1.get_name();
 
         Teaching T1 = new Teaching("Rohit", 202, 20000, "CSE", "OOP", 3);
